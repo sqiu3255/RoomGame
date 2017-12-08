@@ -22,6 +22,16 @@ public class Runner {
 		int x = (int)(Math.random()*building.length);
 		int y = (int)(Math.random()*building.length);
 		building[x][y] = new WinningRoom(x, y);
+		
+		//Create a random treasure room
+		int a = (int)(Math.random()*building.length);
+		int b = (int)(Math.random()*building.length);
+		building[a][b] = new HintRoom(a,b);
+		
+		//Create a random hint room.
+		int c = (int)(Math.random()*building.length);
+		int d = (int)(Math.random()*building.length);
+		building[a][b] = new HintRoom(c,d);
 		 
 		 //Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
