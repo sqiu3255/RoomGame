@@ -1,9 +1,9 @@
 
 public class HintRoom extends Room{
 	
-	public HintRoom(int a, int b)
+	public HintRoom(int x, int y)
 	{
-		super(a, b);
+		super(x, y);
 	}
 	
 	public void enterRoom(Person x)

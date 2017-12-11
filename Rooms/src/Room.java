@@ -1,7 +1,7 @@
 
 public class Room {
 	Person occupant;
-	int xLoc,yLoc;
+	int xLoc,yLoc, points;
 	
 	public Room(int x, int y)
 	{
@@ -14,6 +14,7 @@ public class Room {
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
+		points = 0;
 	}
 	
 	public void leaveRoom(Person x)
