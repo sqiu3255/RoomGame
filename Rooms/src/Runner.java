@@ -23,7 +23,10 @@ public class Runner {
 		int y = (int)(Math.random()*building.length);
 		building[x][y] = new WinningRoom(x, y);
 		
-		
+		//Create a random food room.
+		x = (int)(Math.random()*building.length);
+		y = (int)(Math.random()*building.length);
+		building[x][y] = new FoodRoom(x,y);
 		
 		//Create a random hint room.
 		x = (int)(Math.random()*building.length);
